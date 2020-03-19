@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import HelloWorld from './components/HelloWorld'
 import Cat from './components/Cat'
+import Header from './components/Header'
 
 import GithubLogo from './images/GithubLogo.jpg'
 import adventureCat from './images/adventure-cat.png'
 import chelloCat from './images/chellocat.jpg'
 import luchadorCat from './images/luchadortocat.png'
-
 import megaCat from './images/megacat.jpg'
 import megaCat2 from './images/megacat-2.png'
 import linkToCat from './images/linktocat.jpg'
@@ -28,35 +28,21 @@ class App extends React.Component {
                 <img src={GithubLogo} alt="GithubLogo" />
               </li>
               <li class="octodex">Octodex</li>
-              <li class="home">
-                <a
-                  title="HOME"
-                  href="https://octodex.github.com/"
-                  class="text-gray-dark"
-                >
-                  Home
-                </a>
-              </li>
-              <li class="faq">
-                <a
-                  title="FAQ"
-                  href="https://octodex.github.com/faq/"
-                  class="text-gray-dark"
-                >
-                  FAQ
-                </a>
-              </li>
-            </ul>
-            <ul>
-              <li class="twitter">
-                <a
-                  title="twitter"
-                  href="https://twitter.com/githubdesign"
-                  class="text-gray-dark"
-                >
-                  Follow us on Twitter
-                </a>
-              </li>
+              <Header
+                headerClass="home"
+                href={'https://octodex.github.com/'}
+                headerTitle={'Home'}
+              />
+              <Header
+                headerClass="faq"
+                href={'https://octodex.github.com/faq/'}
+                headerTitle={'FAQ'}
+              />
+              <Header
+                headerClass="twitter"
+                href={'https://twitter.com/githubdesign'}
+                headerTitle={'Follow us onTwitter'}
+              />
             </ul>
           </nav>
         </header>

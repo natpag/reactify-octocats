@@ -57,8 +57,6 @@ ul img {
   padding-right: .5em;
 }
 
-.home {}
-
 .octodex {
   font-weight: 600;
   color: #24292e;
@@ -67,6 +65,10 @@ ul img {
 .faq {
   padding-left: 1rem;
   padding-right: 0rem;
+}
+
+.twitter {
+  padding-left: 90rem;
 }
 
 main {
